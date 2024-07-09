@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/txtAlarm"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_alarm"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/txtAlarm"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/imgAlarm"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAlarm"
+        android:layout_centerHorizontal="true"
+        android:text="Set alarm"
+        android:layout_margin="10dp"
+        android:id="@+id/btnSetAlarm"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSetAlarm"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel alarm"
+        android:layout_margin="10dp"
+        android:id="@+id/btnCancelAlarm"/>
+
+
+</RelativeLayout>
